@@ -1,4 +1,74 @@
 :root {
+  /********************
+  Colors HSL
+  ********************/
+  /* Primary */
+  --cyan: 167deg 36% 54%;
+  --dark-blue: 205deg 41% 21%;
+  --grayish-dark-blue: 245deg 10% 22%;
+
+  /* Secondary */
+  --very-light-gray: 0 0% 98%;
+  --light-gray: 240deg 2% 92%;
+  --bright-red: 0 90% 57%;
+
+  /* Color Assignments */
+  --fc-primary: hsla(var(--grayish-dark-blue) / 1);
+  --page-bg-color: hsla(var(--very-light-gray) / 1);
+
+  /********************
+  Colors HSL
+  ********************/
+
+  --ff-serif: "Ibarra Real Nova", serif;
+  --ff-sans: "Public Sans", sans-serif;
+}
+
+/********************
+Reset
+********************/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+p {
+  font-family: var(--ff-sans);
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-serif);
+}
+
+.body {
+  background-color: var(--page-bg-color);
+  color: var(--fc-primary);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav-list {
+  display: flex;
+}
+
+.hero {
 }
 
 .about-me {
@@ -9,4 +79,10 @@
   flex-basis: 50%;
   flex-shrink: 0;
   max-width: 540px;
+}
+
+.contact {
+}
+
+.footer {
 }
