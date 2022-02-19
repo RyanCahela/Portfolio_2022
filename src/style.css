@@ -38,6 +38,7 @@ body {
 
 ul[class] {
   list-style: none;
+  padding-left: 0;
 }
 
 p {
@@ -52,6 +53,15 @@ h4,
 h5,
 h6 {
   font-family: var(--ff-serif);
+}
+
+/********************
+Layout
+********************/
+.l-center {
+  max-width: 1110px;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
 }
 
 .body {
@@ -72,17 +82,31 @@ h6 {
 }
 
 .about-me {
-  display: flex;
 }
 
 .about-me__image-container {
-  flex-basis: 50%;
-  flex-shrink: 0;
-  max-width: 540px;
 }
 
 .contact {
 }
 
 .footer {
+}
+
+@media screen and (min-width: 350px) {
+  .l-center {
+    padding-inline: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-me {
+    display: flex;
+  }
+
+  .about-me__image-container {
+    flex-basis: 50%;
+    flex-shrink: 0;
+    max-width: 540px;
+  }
 }
