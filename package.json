@@ -1,0 +1,19 @@
+{
+  "name": "portfolio_2022",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-sever src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RyanCahela/Portfolio_2022.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RyanCahela/Portfolio_2022/issues"
+  },
+  "homepage": "https://github.com/RyanCahela/Portfolio_2022#readme"
+}
