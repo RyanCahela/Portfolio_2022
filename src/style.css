@@ -1,3 +1,12 @@
 :root {
+}
 
+.about-me {
+  display: flex;
+}
+
+.about-me__image-container {
+  flex-basis: 50%;
+  flex-shrink: 0;
+  max-width: 540px;
 }
