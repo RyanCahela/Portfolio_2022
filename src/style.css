@@ -19,7 +19,6 @@
   /********************
   Colors HSL
   ********************/
-
   --ff-serif: "Ibarra Real Nova", serif;
   --ff-sans: "Public Sans", sans-serif;
 }
@@ -64,18 +63,30 @@ Layout
   padding-inline: 1.25rem;
 }
 
+/********************
+Defaults
+********************/
+
 .body {
   background-color: var(--page-bg-color);
   color: var(--fc-primary);
 }
 
+/********************
+Components
+********************/
 .header {
-  display: flex;
+  padding-block: 2rem;
+}
+
+.header__nav {
   align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 .header__nav-list {
-  display: flex;
+  display: none;
 }
 
 .hero {
@@ -100,6 +111,14 @@ Layout
 }
 
 @media screen and (min-width: 768px) {
+  .header__nav-list {
+    display: flex;
+  }
+
+  .header__nav-mobile-icon {
+    display: none;
+  }
+
   .about-me {
     display: flex;
   }
