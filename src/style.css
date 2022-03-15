@@ -449,17 +449,185 @@ template {
   display: none;
 }
 
-ul[class] {
-  list-style: none;
+:root {
+  /********************
+  Primary Colors
+  ********************/
+  --slightly-desaturated-cyan: 167deg 36% 54%;
+  --dark-blue: 205deg 41% 21%;
+  --grayish-dark-blue: 245deg 10% 22%;
+  /********************
+  Secondary Colors
+  ********************/
+  --very-light-gray: 0deg 0% 98%;
+  --light-gray: 240deg 2% 92%;
+  --bright-red: 0deg 90% 57%;
+  --white: 0deg 0% 100%;
+  /********************
+  Color Intentions
+  ********************/
+  --fc-primary-dark: hsl(var(--grayish-dark-blue));
+  --fc-secondary-light: hsl(var(--very-light-gray));
+  --fc-primary-accent: hsl(var(--slightly-desaturated-cyan));
+  --fc-secondary-accent: hsl(var(--bright-red));
+  --bg-primary-accent: hsl(var(--slightly-desaturated-cyan));
+  --bg-primary-dark: hsl(var(--grayish-dark-blue));
+  --bg-primary-light: hsl(var(--dark-blue));
+  --bg-secondary-light: hsl(var(--very-light-gray));
+  --bg-secondary-dark: hsl(var(--light-gray));
+  --bg-secondary-accent: hsl(var(--bright-red));
+  /********************
+  Typography
+  ff = font-family
+  fs = font-size
+  lh = line-height
+  ls = letter-spacing
+  ********************/
+  --ff-serif: "Ibarra Real Nova", serif;
+  --ff-sans: "Public Sans", sans-serif;
+  --ls-h1: -0.025125rem;
+  /* -0.45px */
+  --ls-h2: -0.0225rem;
+  /* -0.36px */
+  --ls-h3: -0.019125rem;
+  /* -0.29px */
+  --lh-h1: 3.125rem;
+  /* 50px */
+  --lh-h2: 2.635rem;
+  /* 42px */
+  --lh-h3: 2.25rem;
+  /* 36px */
+  --lh-body-text: 1.875rem;
+  /* 30px */
+  --fs-50: 0.625rem;
+  /* 10px */
+  --fs-100: 0.75rem;
+  /* 12px */
+  --fs-200: 0.8125rem;
+  /* 13px */
+  --fs-300: 0.9375rem;
+  /* 15px */
+  --fs-400: 1rem;
+  /* 16px */
+  --fs-500: 2rem;
+  /* 32px */
+  --fs-600: 2.5rem;
+  /* 40px */
+  --fs-700: 3.125rem;
+  /* 50px */
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-block: 0;
+/********************
+Utility Classes 
+********************/
+/* COLORS */
+.bg-primary-dark {
+  background-color: var(--bg-primary-dark);
+}
+
+.bg-primary-accent {
+  background-color: var(--bg-primary-accent);
+}
+
+.bg-primary-light {
+  background-color: var(--bg-primary-light);
+}
+
+.bg-secondary-dark {
+  background-color: var(--bg-secondary-dark);
+}
+
+.bg-secondary-accent {
+  background-color: var(--bg-secondary-accent);
+}
+
+.bg-sceondary-light {
+  background-color: var(--bg-secondary-light);
+}
+
+.fc-primary-dark {
+  color: var(--fc-primary-dark);
+}
+
+.fc-primary-accent {
+  color: var(--fc-primary-accent);
+}
+
+.fc-primary-light {
+  color: var(--fc-primary-light);
+}
+
+.fc-secondary-accent {
+  color: var(--fc-secondary-accent);
+}
+
+.fc-secondary-light {
+  color: var(--fc-secondary-light);
+}
+
+/* TYPOGRRAPHY */
+.fs-50 {
+  font-size: var(--fs-50);
+}
+
+.fs-100 {
+  font-size: var(--fs-100);
+}
+
+.fs-200 {
+  font-size: var(--fs-200);
+}
+
+.fs-300 {
+  font-size: var(--fs-300);
+}
+
+.fs-400 {
+  font-size: var(--fs-400);
+}
+
+.fs-500 {
+  font-size: var(--fs-500);
+}
+
+.fs-600 {
+  font-size: var(--fs-600);
+}
+
+.fs-700 {
+  font-size: var(--fs-700);
+}
+
+.tt-uppercase {
+  text-transform: uppercase;
+}
+
+.lh-h1 {
+  line-height: var(--line-height-h1);
+}
+
+.lh-h2 {
+  line-height: var(--line-height-h2);
+}
+
+.lh-h3 {
+  line-height: var(--line-height-h3);
+}
+
+.lh-body-text {
+  line-height: var(--line-height-body-text);
+}
+
+.ls-h1 {
+  letter-spacing: var(--letter-spacing-h1);
+}
+
+.ls-h2 {
+  letter-spacing: var(--letter-spacing-h2);
+}
+
+.ls-h3 {
+  letter-spacing: var(--letter-spacing-h3);
 }
 
 /*# sourceMappingURL=style.css.map */

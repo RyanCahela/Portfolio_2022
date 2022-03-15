@@ -12,29 +12,50 @@
   --very-light-gray: 0deg 0% 98%;
   --light-gray: 240deg 2% 92%;
   --bright-red: 0deg 90% 57%;
+  --white: 0deg 0% 100%;
 
   /********************
   Color Intentions
   ********************/
+  --fc-primary-dark: hsl(var(--grayish-dark-blue));
+  --fc-secondary-light: hsl(var(--very-light-gray));
+  --fc-primary-accent: hsl(var(--slightly-desaturated-cyan));
+  --fc-secondary-accent: hsl(var(--bright-red));
+
+  --bg-primary-accent: hsl(var(--slightly-desaturated-cyan));
+  --bg-primary-dark: hsl(var(--grayish-dark-blue));
+  --bg-primary-light: hsl(var(--dark-blue));
+
+  --bg-secondary-light: hsl(var(--very-light-gray));
+  --bg-secondary-dark: hsl(var(--light-gray));
+  --bg-secondary-accent: hsl(var(--bright-red));
 
   /********************
   Typography
+  ff = font-family
+  fs = font-size
+  lh = line-height
+  ls = letter-spacing
   ********************/
+
   --ff-serif: "Ibarra Real Nova", serif;
   --ff-sans: "Public Sans", sans-serif;
 
-  --fs-h1: 3.125rem; /* 50px */
-  --line-height-h1: 3.125rem; /* 50px */
-  --letter-spacing-h1: -0.025125rem; /* -0.45px */
+  --ls-h1: -0.025125rem; /* -0.45px */
+  --ls-h2: -0.0225rem; /* -0.36px */
+  --ls-h3: -0.019125rem; /* -0.29px */
 
-  --fs-h2: 2.5rem; /* 40px */
-  --line-height-h2: 2.635rem; /* 42px */
-  --letter-spacing-h2: -0.0225rem; /* -0.36px */
+  --lh-h1: 3.125rem; /* 50px */
+  --lh-h2: 2.635rem; /* 42px */
+  --lh-h3: 2.25rem; /* 36px */
+  --lh-body-text: 1.875rem; /* 30px */
 
-  --fs-h3: 2rem; /* 16px */
-  --line-height-h2: 2.25rem; /* 36px */
-  --letter-spacing-h3: -0.019125rem; /* -0.29px */
-
-  --fs-body-1: 1rem; /* 16px */
-  --line-height-body-1: 1.875rem; /* 30px */
+  --fs-50: 0.625rem; /* 10px */
+  --fs-100: 0.75rem; /* 12px */
+  --fs-200: 0.8125rem; /* 13px */
+  --fs-300: 0.9375rem; /* 15px */
+  --fs-400: 1rem; /* 16px */
+  --fs-500: 2rem; /* 32px */
+  --fs-600: 2.5rem; /* 40px */
+  --fs-700: 3.125rem; /* 50px */
 }
