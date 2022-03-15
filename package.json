@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "live-server src"
+    "dev": "sass ./src/scss/index.scss ./src/style.css && live-server src"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/RyanCahela/Portfolio_2022/issues"
   },
-  "homepage": "https://github.com/RyanCahela/Portfolio_2022#readme"
+  "homepage": "https://github.com/RyanCahela/Portfolio_2022#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "normalize-scss": "^7.0.1",
+    "sass": "^1.49.9"
+  }
 }

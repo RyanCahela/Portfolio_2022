@@ -18,10 +18,13 @@
     />
     <link rel="stylesheet" href="style.css" />
 
-    <title>Ryan Cahela | Web Developer</title>
+    <title>Ryan Cahela | Web Develeoper</title>
   </head>
   <body class="body">
     <div class="l-center">
+      <!-------------------
+      HEADER
+      ---------------------->
       <header class="header">
         <nav class="header__nav">
           <img src="./images/logo.svg" alt="logo" />
@@ -35,6 +38,10 @@
           </div>
         </nav>
       </header>
+
+      <!-------------------
+      HERO SECTION
+      ---------------------->
       <main class="main">
         <img
           src="images/homepage/desktop/image-homepage-hero.jpg"
@@ -49,16 +56,25 @@
           width="100%"
           alt="computer screen with graphs around it"
         />
-        <section>
-          <h1>Hey, I'm Ryan Cahela and I love building beautiful websites</h1>
-          <a>
+        <div class="main__hero-text-container">
+          <h1 class="main__hero-header">
+            Hi, I'm Ryan Cahela and I love building beautiful websites
+          </h1>
+          <a href="#about-me">
             <img src="./images/icons/down-arrows.svg" alt="down arrow icona" />
             <span>About Me</span>
           </a>
-        </section>
+        </div>
       </main>
 
-      <section class="about-me">
+      <!-------------------
+      ABOUT ME SECTION
+      ---------------------->
+      <section
+        aria-labelledby="about-me__header"
+        class="about-me"
+        id="about-me"
+      >
         <div class="about-me__image-container">
           <img
             src="./images/homepage/desktop/image-homepage-profile.jpg"
@@ -74,8 +90,9 @@
             width="100%"
           />
         </div>
+
         <div>
-          <h2>About Me</h2>
+          <h2 id="about-me__header">About Me</h2>
           <p>
             I'm a junior front-end developer looking for a new role in an
             exciting company. I focus on writing accessible HTML, using modern
@@ -90,10 +107,28 @@
           <a href="#">Go to Portfolio</a>
         </div>
       </section>
+
+      <!-------------------
+      PORTFOLIO 
+      ---------------------->
+      <section class="portfolio">
+        <ul class="portfolio__gallery">
+          <li>project 1</li>
+          <li>Project 2</li>
+          <li>Project 3</li>
+        </ul>
+      </section>
+      <!-------------------
+      CONTACT SECTION
+      ---------------------->
       <section class="contact">
         <h2>Interested in doing a project together?</h2>
-        <a href="">Contact Me</a>
+        <a href="#">Contact Me</a>
       </section>
+
+      <!-------------------
+      FOOTER
+      ---------------------->
       <footer class="footer">
         <img src="./images/logo.svg" alt="logo" />
         <ul>
