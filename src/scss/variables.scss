@@ -1,0 +1,40 @@
+:root {
+  /********************
+  Primary Colors
+  ********************/
+  --slightly-desaturated-cyan: 167deg 36% 54%;
+  --dark-blue: 205deg 41% 21%;
+  --grayish-dark-blue: 245deg 10% 22%;
+
+  /********************
+  Secondary Colors
+  ********************/
+  --very-light-gray: 0deg 0% 98%;
+  --light-gray: 240deg 2% 92%;
+  --bright-red: 0deg 90% 57%;
+
+  /********************
+  Color Intentions
+  ********************/
+
+  /********************
+  Typography
+  ********************/
+  --ff-serif: "Ibarra Real Nova", serif;
+  --ff-sans: "Public Sans", sans-serif;
+
+  --fs-h1: 3.125rem; /* 50px */
+  --line-height-h1: 3.125rem; /* 50px */
+  --letter-spacing-h1: -0.025125rem; /* -0.45px */
+
+  --fs-h2: 2.5rem; /* 40px */
+  --line-height-h2: 2.635rem; /* 42px */
+  --letter-spacing-h2: -0.0225rem; /* -0.36px */
+
+  --fs-h3: 2rem; /* 16px */
+  --line-height-h2: 2.25rem; /* 36px */
+  --letter-spacing-h3: -0.019125rem; /* -0.29px */
+
+  --fs-body-1: 1rem; /* 16px */
+  --line-height-body-1: 1.875rem; /* 30px */
+}
