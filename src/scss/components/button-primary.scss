@@ -2,18 +2,16 @@
 
 .button-primary {
   @extend %button-reset;
-  background-color: var(--clr-primary-light);
-  color: var(--clr-secondary-light);
+  background-color: hsl(var(--clr-primary-light));
+  color: hsl(var(--clr-secondary-light));
   width: 200px;
-
-  transition: background-color 0.3s ease-in;
 
   &__icon-container {
     width: 48px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--clr-black-10-percent-opacity);
+    background-color: hsl(var(--clr-black-10-percent-opacity));
   }
 
   &__text {
@@ -22,10 +20,10 @@
   }
 
   &:hover {
-    background-color: var(--clr-primary-accent);
+    background-color: hsl(var(--clr-primary-accent));
   }
 
   &:disabled {
-    background-color: var(--clr-disabled-btn);
+    background-color: hsl(var(--clr-disabled-btn));
   }
 }

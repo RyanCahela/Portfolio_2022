@@ -1,12 +1,26 @@
 @use "./button";
 
-.button--secondary {
+.button-secondary {
   @extend %button-reset;
-  background-color: var(--clr-white);
-  border: 1px solid var(--clr-primary-dark);
-  color: var(--clr-primary-dark);
+  background-color: hsl(var(--clr-white));
+  border: 1px solid hsl(var(--clr-primary-dark));
+  color: hsl(var(--clr-primary-dark));
+  transition-duration: 0.5s;
   justify-content: center;
   align-items: center;
   width: 168px;
   height: 48px;
+
+  &:hover {
+    background-color: hsl(var(--clr-primary-dark));
+    color: hsl(var(--clr-secondary-light));
+  }
+
+  &:disabled {
+    --clr-disabled: hsl(var(--clr-primary-dark-20-percent-opacity));
+    background-color: hsl(var(--clr-white));
+    border: 1px solid var(--clr-disabled);
+    color: var(--clr-disabled);
+    pointer-events: none;
+  }
 }

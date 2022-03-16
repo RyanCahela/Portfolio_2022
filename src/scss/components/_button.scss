@@ -1,3 +1,11 @@
 %button-reset {
   border: none;
+  display: flex;
+  transition-property: background-color, color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+
+  &:hover {
+    cursor: pointer;
+  }
 }

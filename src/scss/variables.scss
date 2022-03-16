@@ -30,8 +30,8 @@
 
   --clr-white: hsl(0, 0, 100%);
   --clr-disabled-btn: hsl(0 0% 59%);
-  --clr-black-10-percent-opacity: hsla(0 0% 0% / 0.1);
-  --clr-primary-dark-20-percent-opacity: hsla(var(--clr-primary-dark) / 0.2);
+  --clr-black-10-percent-opacity: 0 0% 0% / 0.1;
+  --clr-primary-dark-20-percent-opacity: var(--clr-primary-dark) / 0.2;
   /********************
   Typography
   ff = font-family
