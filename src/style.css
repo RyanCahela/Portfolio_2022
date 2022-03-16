@@ -517,8 +517,8 @@ template {
   /* 50px */
 }
 
-img {
-  width: 100%;
+ul[class] {
+  list-style: none;
 }
 
 /********************
@@ -662,12 +662,17 @@ Utility Classes
   background-color: var(--bg-primary-light);
   color: var(--fc-secondary-light);
   text-decoration: none;
+  width: 200px;
 }
 .link-button__icon-container {
   width: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.link-button__icon {
-  object-fit: cover;
+.link-button__text {
+  text-align: center;
+  flex-grow: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
