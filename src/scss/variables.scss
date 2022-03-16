@@ -17,19 +17,21 @@
   /********************
   Color Intentions
   ********************/
-  --fc-primary-dark: hsl(var(--grayish-dark-blue));
-  --fc-secondary-light: hsl(var(--very-light-gray));
-  --fc-primary-accent: hsl(var(--slightly-desaturated-cyan));
-  --fc-secondary-accent: hsl(var(--bright-red));
+  /*
+  todo: maybe i can refactor to general color vars like primary-dark etc...
+  */
+  --clr-primary-dark: var(--grayish-dark-blue);
+  --clr-primary-light: var(--dark-blue);
+  --clr-primary-accent: var(--slightly-desaturated-cyan);
 
-  --bg-primary-accent: hsl(var(--slightly-desaturated-cyan));
-  --bg-primary-dark: hsl(var(--grayish-dark-blue));
-  --bg-primary-light: hsl(var(--dark-blue));
+  --clr-secondary-dark: var(--light-gray);
+  --clr-secondary-light: var(--very-light-gray);
+  --clr-secondary-accent: var(--bright-red);
 
-  --bg-secondary-light: hsl(var(--very-light-gray));
-  --bg-secondary-dark: hsl(var(--light-gray));
-  --bg-secondary-accent: hsl(var(--bright-red));
-
+  --clr-white: hsl(0, 0, 100%);
+  --clr-disabled-btn: hsl(0 0% 59%);
+  --clr-black-10-percent-opacity: hsla(0 0% 0% / 0.1);
+  --clr-primary-dark-20-percent-opacity: hsla(var(--clr-primary-dark) / 0.2);
   /********************
   Typography
   ff = font-family

@@ -33,17 +33,48 @@
       esse explicabo, voluptas soluta recusandae iusto dignissimos praesentium
       fugit, ullam accusantium.
     </p>
-
-    <h2>Links</h2>
-    <a href="#" class="link-button d-flex tt-uppercase">
-      <div class="link-button__icon-container">
-        <img
-          class="link-button__icon"
-          aria-hidden="true"
-          src="./images/icons/down-arrows.svg"
-        />
+    <section class="d-grid" style="grid-template: auto / 1fr 1fr">
+      <h2 style="grid-column: 1 / -1">Links</h2>
+      <div>
+        <h5>Primary</h5>
+        <!--TODO change a tags to buttons to allow for disabeld state -->
+        <button href="#" class="link-button">
+          <div class="link-button__icon-container">
+            <img
+              class="link-button__icon"
+              aria-hidden="true"
+              src="./images/icons/down-arrows.svg"
+            />
+          </div>
+          <p class="link-button__text">About Me</p>
+        </button>
+        <button href="#" class="link-button">
+          <div class="link-button__icon-container">
+            <img
+              class="link-button__icon"
+              aria-hidden="true"
+              src="./images/icons/down-arrows.svg"
+            />
+          </div>
+          <p class="link-button__text">About Me</p>
+        </button>
+        <button disabled href="#" class="link-button">
+          <div class="link-button__icon-container">
+            <img
+              class="link-button__icon"
+              aria-hidden="true"
+              src="./images/icons/down-arrows.svg"
+            />
+          </div>
+          <p class="link-button__text">About Me</p>
+        </button>
       </div>
-      <p class="link-button__text">About Me</p>
-    </a>
+      <div>
+        <h5>Secondary</h5>
+        <button href="#" class="link-button--secondary">Contact Me</button>
+        <button href="#" class="link-button--secondary">Contact Me</button>
+        <button href="#" class="link-button--secondary">Contact Me</button>
+      </div>
+    </section>
   </body>
 </html>

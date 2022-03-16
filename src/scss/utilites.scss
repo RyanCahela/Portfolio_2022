@@ -3,19 +3,19 @@ Utility Classes
 ********************/
 
 /* COLORS */
-.bg-primary-dark {background-color: var(--bg-primary-dark);}
-.bg-primary-accent {background-color: var(--bg-primary-accent);}
-.bg-primary-light {background-color: var(--bg-primary-light);}
+.bg-primary-dark {background-color: hsl(var(clr-primary-dark));}
+.bg-primary-accent {background-color: hsl(var(clr-primary-accent));}
+.bg-primary-light {background-color: hsl(var(clr-primary-light));}
 
-.bg-secondary-dark {background-color: var(--bg-secondary-dark);}
-.bg-secondary-accent {background-color: var(--bg-secondary-accent);}
-.bg-sceondary-light {background-color: var(--bg-secondary-light);}
+.bg-secondary-dark {background-color: hsl(var(clr-secondary-dark));}
+.bg-secondary-accent {background-color: hsl(var(clr-secondary-accent));}
+.bg-sceondary-light {background-color: hsl(var(clr-secondary-light));}
 
-.fc-primary-dark {color: var(--fc-primary-dark);}
-.fc-primary-accent {color: var(--fc-primary-accent);}
-.fc-primary-light {color: var(--fc-primary-light);}
-.fc-secondary-accent {color: var(--fc-secondary-accent);}
-.fc-secondary-light {color: var(--fc-secondary-light);}
+.fc-primary-dark {color: hsl(var(clr-primary-dark));}
+.fc-primary-accent {color: hsl(var(clr-primary-accent));}
+.fc-primary-light {color: hsl(var(clr-primary-light));}
+.fc-secondary-accent {color: hsl(var(clr-secondary-accent));}
+.fc-secondary-light {color: hsl(var(clr-secondary-light));}
 
   /* TYPOGRRAPHY */
 .fs-50 {font-size: var(--fs-50);} /* 10px */

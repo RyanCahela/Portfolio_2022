@@ -1,0 +1,12 @@
+@use "./button";
+
+.button--secondary {
+  @extend %button-reset;
+  background-color: var(--clr-white);
+  border: 1px solid var(--clr-primary-dark);
+  color: var(--clr-primary-dark);
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 48px;
+}

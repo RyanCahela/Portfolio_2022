@@ -466,16 +466,19 @@ template {
   /********************
   Color Intentions
   ********************/
-  --fc-primary-dark: hsl(var(--grayish-dark-blue));
-  --fc-secondary-light: hsl(var(--very-light-gray));
-  --fc-primary-accent: hsl(var(--slightly-desaturated-cyan));
-  --fc-secondary-accent: hsl(var(--bright-red));
-  --bg-primary-accent: hsl(var(--slightly-desaturated-cyan));
-  --bg-primary-dark: hsl(var(--grayish-dark-blue));
-  --bg-primary-light: hsl(var(--dark-blue));
-  --bg-secondary-light: hsl(var(--very-light-gray));
-  --bg-secondary-dark: hsl(var(--light-gray));
-  --bg-secondary-accent: hsl(var(--bright-red));
+  /*
+  todo: maybe i can refactor to general color vars like primary-dark etc...
+  */
+  --clr-primary-dark: var(--grayish-dark-blue);
+  --clr-primary-light: var(--dark-blue);
+  --clr-primary-accent: var(--slightly-desaturated-cyan);
+  --clr-secondary-dark: var(--light-gray);
+  --clr-secondary-light: var(--very-light-gray);
+  --clr-secondary-accent: var(--bright-red);
+  --clr-white: hsl(0, 0, 100%);
+  --clr-disabled-btn: hsl(0 0% 59%);
+  --clr-black-10-percent-opacity: hsla(0 0% 0% / 0.1);
+  --clr-primary-dark-20-percent-opacity: hsla(var(--clr-primary-dark) / 0.2);
   /********************
   Typography
   ff = font-family
@@ -526,47 +529,47 @@ Utility Classes
 ********************/
 /* COLORS */
 .bg-primary-dark {
-  background-color: var(--bg-primary-dark);
+  background-color: hsl(var(clr-primary-dark));
 }
 
 .bg-primary-accent {
-  background-color: var(--bg-primary-accent);
+  background-color: hsl(var(clr-primary-accent));
 }
 
 .bg-primary-light {
-  background-color: var(--bg-primary-light);
+  background-color: hsl(var(clr-primary-light));
 }
 
 .bg-secondary-dark {
-  background-color: var(--bg-secondary-dark);
+  background-color: hsl(var(clr-secondary-dark));
 }
 
 .bg-secondary-accent {
-  background-color: var(--bg-secondary-accent);
+  background-color: hsl(var(clr-secondary-accent));
 }
 
 .bg-sceondary-light {
-  background-color: var(--bg-secondary-light);
+  background-color: hsl(var(clr-secondary-light));
 }
 
 .fc-primary-dark {
-  color: var(--fc-primary-dark);
+  color: hsl(var(clr-primary-dark));
 }
 
 .fc-primary-accent {
-  color: var(--fc-primary-accent);
+  color: hsl(var(clr-primary-accent));
 }
 
 .fc-primary-light {
-  color: var(--fc-primary-light);
+  color: hsl(var(clr-primary-light));
 }
 
 .fc-secondary-accent {
-  color: var(--fc-secondary-accent);
+  color: hsl(var(clr-secondary-accent));
 }
 
 .fc-secondary-light {
-  color: var(--fc-secondary-light);
+  color: hsl(var(clr-secondary-light));
 }
 
 /* TYPOGRRAPHY */
@@ -658,21 +661,42 @@ Utility Classes
   display: grid;
 }
 
-.link-button {
-  background-color: var(--bg-primary-light);
-  color: var(--fc-secondary-light);
-  text-decoration: none;
-  width: 200px;
+.button--secondary, .button-primary {
+  border: none;
 }
-.link-button__icon-container {
+
+.button-primary {
+  background-color: var(--clr-primary-light);
+  color: var(--clr-secondary-light);
+  width: 200px;
+  transition: background-color 0.3s ease-in;
+}
+.button-primary__icon-container {
   width: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--clr-black-10-percent-opacity);
 }
-.link-button__text {
+.button-primary__text {
   text-align: center;
   flex-grow: 1;
+}
+.button-primary:hover {
+  background-color: var(--clr-primary-accent);
+}
+.button-primary:disabled {
+  background-color: var(--clr-disabled-btn);
+}
+
+.button--secondary {
+  background-color: var(--clr-white);
+  border: 1px solid var(--clr-primary-dark);
+  color: var(--clr-primary-dark);
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 48px;
 }
 
 /*# sourceMappingURL=style.css.map */
