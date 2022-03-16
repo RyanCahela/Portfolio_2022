@@ -32,17 +32,14 @@ Utility Classes
 .ff-sans {font-family: var(--ff-sans);}
 .ff-serif {font-family: var(--ff-serif);}
 
+.line-height-h1 {line-height: var(--line-height-h1);}
+.line-height-h2 {line-height: var(--line-height-h2);}
+.line-height-h3 {line-height: var(--line-height-h3);}
+.line-height-body-text {line-height: var(--line-height-body-text)}
 
-// TODO: Unabriviate to .line-height-h1 etc.
-.lh-h1 {line-height: var(--line-height-h1);}
-.lh-h2 {line-height: var(--line-height-h2);}
-.lh-h3 {line-height: var(--line-height-h3);}
-.lh-body-text {line-height: var(--line-height-body-text)}
-
-// TODO: Unabriviate to .letter-spacing-h1 etc.
-.ls-h1 {letter-spacing: var(--letter-spacing-h1);}
-.ls-h2 {letter-spacing: var(--letter-spacing-h2);}
-.ls-h3 {letter-spacing: var(--letter-spacing-h3);}
+.letter-spacing-h1 {letter-spacing: var(--letter-spacing-h1);}
+.letter-spacing-h2 {letter-spacing: var(--letter-spacing-h2);}
+.letter-spacing-h3 {letter-spacing: var(--letter-spacing-h3);}
 
 .d-flex {
   display: flex;
