@@ -5,17 +5,17 @@
   background-color: hsl(var(--clr-primary-light));
   color: hsl(var(--clr-secondary-light));
   width: 200px;
+  align-items: stretch;
 
   &__icon-container {
     width: 48px;
-    display: flex;
     justify-content: center;
     align-items: center;
+    display: flex;
     background-color: hsl(var(--clr-black-10-percent-opacity));
   }
 
   &__text {
-    text-align: center;
     flex-grow: 1;
   }
 
@@ -25,5 +25,6 @@
 
   &:disabled {
     background-color: hsl(var(--clr-disabled-btn));
+    color: hsl(var(--clr-white));
   }
 }

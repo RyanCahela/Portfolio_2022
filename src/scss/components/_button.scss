@@ -4,8 +4,13 @@
   transition-property: background-color, color;
   transition-duration: 0.3s;
   transition-timing-function: ease-in;
+  padding-inline: 0;
 
   &:hover {
     cursor: pointer;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
   }
 }

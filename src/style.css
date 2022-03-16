@@ -475,8 +475,8 @@ template {
   --clr-secondary-dark: var(--light-gray);
   --clr-secondary-light: var(--very-light-gray);
   --clr-secondary-accent: var(--bright-red);
-  --clr-white: hsl(0, 0, 100%);
-  --clr-disabled-btn: hsl(0 0% 59%);
+  --clr-white: 0 0% 100%;
+  --clr-disabled-btn: 0 0% 59%;
   --clr-black-10-percent-opacity: 0 0% 0% / 0.1;
   --clr-primary-dark-20-percent-opacity: var(--clr-primary-dark) / 0.2;
   /********************
@@ -667,25 +667,29 @@ Utility Classes
   transition-property: background-color, color;
   transition-duration: 0.3s;
   transition-timing-function: ease-in;
+  padding-inline: 0;
 }
 .button-secondary:hover, .button-primary:hover {
   cursor: pointer;
+}
+.button-secondary:disabled, .button-primary:disabled {
+  cursor: not-allowed;
 }
 
 .button-primary {
   background-color: hsl(var(--clr-primary-light));
   color: hsl(var(--clr-secondary-light));
   width: 200px;
+  align-items: stretch;
 }
 .button-primary__icon-container {
   width: 48px;
-  display: flex;
   justify-content: center;
   align-items: center;
+  display: flex;
   background-color: hsl(var(--clr-black-10-percent-opacity));
 }
 .button-primary__text {
-  text-align: center;
   flex-grow: 1;
 }
 .button-primary:hover {
@@ -693,6 +697,7 @@ Utility Classes
 }
 .button-primary:disabled {
   background-color: hsl(var(--clr-disabled-btn));
+  color: hsl(var(--clr-white));
 }
 
 .button-secondary {
@@ -714,7 +719,6 @@ Utility Classes
   background-color: hsl(var(--clr-white));
   border: 1px solid var(--clr-disabled);
   color: var(--clr-disabled);
-  pointer-events: none;
 }
 
 /*# sourceMappingURL=style.css.map */
