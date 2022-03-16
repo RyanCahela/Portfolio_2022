@@ -1,0 +1,13 @@
+.link-button {
+  background-color: var(--bg-primary-light);
+  color: var(--fc-secondary-light);
+  text-decoration: none;
+
+  &__icon-container {
+    width: 48px;
+  }
+
+  &__icon {
+    object-fit: cover;
+  }
+}
